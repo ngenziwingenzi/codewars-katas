@@ -8,3 +8,13 @@ function getCount(str) {
 }
 
 console.log(getCount("i have a pen"));
+
+//Better approach
+function countVowels(str) {
+  const vowels = new Set(['a','e','i','o','u']);
+  let count = 0;
+  for (const ch of str.toLowerCase()) {
+    if (vowels.has(ch)) count++;
+  }
+  return count;
+}

@@ -10,7 +10,8 @@ const squareDigits = num =>
   Number(String(num)
     .split('')
     .map(d => d * d)
-    .join(''))      
+    .join('')
+  )      
 
 console.log(squareDigits(9119));
 
